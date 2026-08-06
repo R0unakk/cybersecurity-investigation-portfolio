@@ -25,8 +25,6 @@ The objective is to determine whether the activity represents:
 
 ## User
 
-Example:
-
 John Smith
 
 ## Suspicious Activity

@@ -176,10 +176,6 @@ Understanding how organisations control access after identity verification.
 
 
 
-Examples:
-
-
-
 \- User permissions
 
 \- Security groups
