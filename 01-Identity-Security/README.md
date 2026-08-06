@@ -1,290 +1,78 @@
-\# Investigation Notes – Day 1
+\# Day 1 – Identity Security Fundamentals
 
 
 
-\## Investigation Scenario
+\## Business Scenario
 
+A company relies on Microsoft Entra ID to manage user identities. The security team must understand how identities are authenticated, authorized, and monitored to detect suspicious access.
 
 
-An alert was generated for suspicious sign-in activity involving a user account.
 
+\## Security Problem
 
+Compromised user accounts can lead to unauthorized access, data theft, and privilege escalation.
 
-\### Alert Summary
 
 
+\## Risk
 
-\- User: John Smith
+\- Credential theft
 
-\- Time: 02:13 AM
+\- Password spray attacks
 
-\- Location: Russia
+\- MFA fatigue
 
-\- Failed Sign-ins: 12
+\- Phishing
 
-\- Successful Sign-in: Yes
+\- Token theft
 
-\- Investigation Status: Initial Review
 
 
+\## Investigation
 
-\---
+Reviewed:
 
+\- Authentication vs Authorization
 
+\- Microsoft Entra ID components
 
-\# Initial Assessment
+\- Common identity attacks
 
+\- Sign-in log fields used during investigations
 
 
-The alert could indicate:
 
+\## Tools Used
 
+\- Microsoft Entra ID (theory or lab)
 
-\- Password spray attack
+\- GitHub
 
-\- Credential compromise
 
-\- Legitimate user travelling
 
-\- VPN usage
+\## Findings
 
-\- False positive
+Identity-based attacks are a primary entry point for attackers. Sign-in logs provide key evidence such as user, IP address, location, device, and authentication results.
 
 
 
-Further investigation is required before concluding the account has been compromised.
+\## Security Improvement
 
+Established a foundational understanding of identity security and how analysts investigate suspicious sign-in activity.
 
 
-\---
 
+\## Lessons Learned
 
+Identity is the first layer of enterprise security. Understanding authentication, authorization, and sign-in logs is essential for effective incident investigation.
 
-\# Evidence to Collect
 
 
+\## Future Improvements
 
-\## Identity Information
+\- Explore Conditional Access
 
+\- Configure MFA
 
-
-\- Username
-
-\- User department
-
-\- Assigned roles
-
-\- Privileged access
-
-\- MFA status
-
-
-
-\---
-
-
-
-\## Sign-in Details
-
-
-
-Collect:
-
-
-
-\- Timestamp
-
-\- IP Address
-
-\- Country
-
-\- City
-
-\- Device Name
-
-\- Browser
-
-\- Operating System
-
-\- Sign-in Result
-
-\- Authentication Method
-
-
-
-\---
-
-
-
-\## Questions to Answer
-
-
-
-\### Who?
-
-
-
-Who owns the account?
-
-
-
-Who approved the login?
-
-
-
-\---
-
-
-
-\### What?
-
-
-
-What applications were accessed?
-
-
-
-What actions were performed after sign-in?
-
-
-
-\---
-
-
-
-\### When?
-
-
-
-When did the first failed login occur?
-
-
-
-When did the successful login occur?
-
-
-
-Were there any sign-ins afterwards?
-
-
-
-\---
-
-
-
-\### Where?
-
-
-
-Which country?
-
-
-
-Which IP address?
-
-
-
-Has this IP been seen before?
-
-
-
-\---
-
-
-
-\### How?
-
-
-
-Was MFA used?
-
-
-
-Was Conditional Access applied?
-
-
-
-Was the device compliant?
-
-
-
-\---
-
-
-
-\### Why?
-
-
-
-Why was the login considered suspicious?
-
-
-
-Was the user expected to be in this location?
-
-
-
-\---
-
-
-
-\# Possible Indicators of Compromise
-
-
-
-\- Multiple failed logins
-
-\- Successful login after failures
-
-\- New geographic location
-
-\- Unusual sign-in time
-
-\- New device
-
-\- Impossible travel
-
-\- High-risk sign-in
-
-
-
-\---
-
-
-
-\# Possible Response Actions
-
-
-
-If compromise is confirmed:
-
-
-
-\- Block sign-in
-
-\- Reset password
-
-\- Revoke active sessions
-
-\- Require MFA re-registration
-
-\- Review mailbox rules
-
-\- Review file access
-
-\- Notify the user
-
-\- Continue monitoring
-
-
-
-\---
-
-
-
-\# Lessons Learned
-
-
-
-Identity investigations should begin by validating whether the activity is expected or suspicious. Evidence from sign-in logs, MFA status, device information, and user context helps determine whether an account has been compromised.
+\- Investigate sign-in logs with Microsoft Sentinel
 
