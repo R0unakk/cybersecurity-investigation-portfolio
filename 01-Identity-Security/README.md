@@ -2,77 +2,421 @@
 
 
 
-\## Business Scenario
-
-A company relies on Microsoft Entra ID to manage user identities. The security team must understand how identities are authenticated, authorized, and monitored to detect suspicious access.
+\## Project Overview
 
 
 
-\## Security Problem
-
-Compromised user accounts can lead to unauthorized access, data theft, and privilege escalation.
+This project introduces the fundamentals of enterprise identity security and the role identity plays in modern cybersecurity.
 
 
 
-\## Risk
+Modern organisations rely heavily on cloud identity platforms such as Microsoft Entra ID to manage users, devices, applications, authentication, and access control.
+
+
+
+The objective of this project is to understand how identity-based attacks occur and how security teams investigate suspicious authentication activity.
+
+
+
+\---
+
+
+
+\# Business Scenario
+
+
+
+An organisation uses Microsoft Entra ID to manage employee identities and access to cloud resources.
+
+
+
+Because user accounts provide access to business applications and data, compromised identities represent a significant security risk.
+
+
+
+The security team needs to understand:
+
+
+
+\- How users authenticate
+
+\- How access is controlled
+
+\- How suspicious sign-ins are detected
+
+\- How identity incidents are investigated
+
+
+
+\---
+
+
+
+\# Security Problem
+
+
+
+Identity-based attacks are one of the most common methods attackers use to gain initial access to organisations.
+
+
+
+Examples include:
+
+
+
+\- Phishing attacks
+
+\- Password spraying
 
 \- Credential theft
 
-\- Password spray attacks
-
-\- MFA fatigue
-
-\- Phishing
+\- MFA fatigue attacks
 
 \- Token theft
 
 
 
-\## Investigation
+A compromised account can allow attackers to access business systems without immediately triggering traditional malware detection.
 
-Reviewed:
+
+
+\---
+
+
+
+\# Security Risk
+
+
+
+A compromised identity could lead to:
+
+
+
+\- Unauthorised access to company resources
+
+\- Data theft
+
+\- Business email compromise
+
+\- Privilege escalation
+
+\- Lateral movement
+
+\- Financial fraud
+
+
+
+Identity security controls are therefore a critical part of enterprise security.
+
+
+
+\---
+
+
+
+\# Objectives
+
+
+
+The objectives of this project were to understand:
+
+
 
 \- Authentication vs Authorization
 
-\- Microsoft Entra ID components
+\- Microsoft Entra ID fundamentals
 
-\- Common identity attacks
+\- Identity components
 
-\- Sign-in log fields used during investigations
+\- Common identity attack techniques
 
+\- Sign-in log information used during investigations
 
-
-\## Tools Used
-
-\- Microsoft Entra ID (theory or lab)
-
-\- GitHub
+\- The security investigation process for suspicious account activity
 
 
 
-\## Findings
-
-Identity-based attacks are a primary entry point for attackers. Sign-in logs provide key evidence such as user, IP address, location, device, and authentication results.
+\---
 
 
 
-\## Security Improvement
-
-Established a foundational understanding of identity security and how analysts investigate suspicious sign-in activity.
+\# Investigation / Research
 
 
 
-\## Lessons Learned
-
-Identity is the first layer of enterprise security. Understanding authentication, authorization, and sign-in logs is essential for effective incident investigation.
+The following areas were explored:
 
 
 
-\## Future Improvements
+\## Authentication
 
-\- Explore Conditional Access
 
-\- Configure MFA
 
-\- Investigate sign-in logs with Microsoft Sentinel
+Understanding how organisations verify user identity through:
+
+
+
+\- Password authentication
+
+\- Multi-factor authentication (MFA)
+
+\- Passwordless authentication methods
+
+
+
+\---
+
+
+
+\## Authorization
+
+
+
+Understanding how organisations control access after identity verification.
+
+
+
+Examples:
+
+
+
+\- User permissions
+
+\- Security groups
+
+\- Role-based access control (RBAC)
+
+
+
+\---
+
+
+
+\## Microsoft Entra ID Components
+
+
+
+Explored key identity components:
+
+
+
+\- Users
+
+\- Groups
+
+\- Devices
+
+\- Applications
+
+\- Roles
+
+\- Authentication methods
+
+
+
+\---
+
+
+
+\## Identity Attack Techniques
+
+
+
+Reviewed common identity threats:
+
+
+
+\### Password Spray
+
+
+
+Attackers attempt a small number of commonly used passwords against many accounts.
+
+
+
+\### Brute Force
+
+
+
+Attackers attempt many passwords against a single account.
+
+
+
+\### MFA Fatigue
+
+
+
+Attackers repeatedly send MFA requests hoping a user approves one.
+
+
+
+\### Token Theft
+
+
+
+Attackers obtain authentication tokens to access resources without using a password.
+
+
+
+\### Phishing
+
+
+
+Attackers trick users into providing credentials through fake login pages.
+
+
+
+\---
+
+
+
+\# Tools Used
+
+
+
+\- Microsoft Entra ID security concepts
+
+\- Microsoft security documentation
+
+\- GitHub for technical documentation and portfolio development
+
+
+
+\---
+
+
+
+\# Findings
+
+
+
+Identity is a critical security layer because most enterprise resources depend on authenticated users.
+
+
+
+Security teams rely on identity telemetry such as:
+
+
+
+\- User activity
+
+\- Sign-in location
+
+\- IP address
+
+\- Authentication method
+
+\- Device information
+
+\- Risk indicators
+
+
+
+to identify potentially compromised accounts.
+
+
+
+\---
+
+
+
+\# Security Improvement
+
+
+
+Improved understanding of:
+
+
+
+\- How identity attacks occur
+
+\- How authentication activity can be investigated
+
+\- What evidence security analysts collect during identity investigations
+
+\- How identity controls reduce security risk
+
+
+
+\---
+
+
+
+\# Business Impact
+
+
+
+A strong identity security foundation helps organisations:
+
+
+
+\- Reduce account compromise risk
+
+\- Improve threat detection
+
+\- Strengthen access control
+
+\- Respond faster to suspicious activity
+
+
+
+\---
+
+
+
+\# Lessons Learned
+
+
+
+Identity is one of the most important security domains in modern organisations.
+
+
+
+Security analysts must understand:
+
+
+
+\- Who accessed a system
+
+\- What actions occurred
+
+\- When activity happened
+
+\- Where access originated
+
+\- How attackers gained access
+
+\- Why security controls failed
+
+
+
+This investigation mindset is essential for incident response and threat hunting.
+
+
+
+\---
+
+
+
+\# Future Improvements
+
+
+
+Future development areas:
+
+
+
+\- Create a Microsoft Entra ID lab environment
+
+\- Configure MFA controls
+
+\- Implement Conditional Access policies
+
+\- Explore Identity Protection
+
+\- Investigate sign-in logs
+
+\- Connect identity data to Microsoft Sentinel
+
+\- Create KQL queries for identity threat detection
 

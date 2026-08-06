@@ -1,10 +1,11 @@
-# Investigation Notes – Day 1
+# Investigation Notes – Identity Security
 
 ## Investigation Scenario
 
-An alert was generated for suspicious sign-in activity involving a user account.
+A security alert has been generated indicating suspicious authentication activity involving a user account.
 
-### Alert Summary
+The objective is to determine whether the activity represents:
+
 
 - User: John Smith
 - Time: 02:13 AM
@@ -13,133 +14,229 @@ An alert was generated for suspicious sign-in activity involving a user account.
 - Successful Sign-in: No
 - Investigation Status: Initial Review
 
+- Legitimate user behaviour
+- Account compromise
+- Credential abuse
+- False positive detection
+
+---
+
+# Alert Summary
+
+## User
+
+Example:
+
+John Smith
+
+## Suspicious Activity
+
+- Multiple failed sign-in attempts
+- Successful authentication after failures
+- Unusual login location
+- Login occurring outside normal working hours
+
+
 ---
 
 # Initial Assessment
 
-The alert could indicate:
+The activity could indicate:
 
 - Password spray attack
-- Credential compromise
-- Legitimate user travelling
-- VPN usage
-- False positive
+- Brute force attempt
+- Stolen credentials
+- VPN/proxy usage
+- Legitimate travel
+- Incorrect detection
 
-Further investigation is required before concluding the account has been compromised.
+Additional evidence is required before confirming compromise.
 
 ---
 
-# Evidence to Collect
+# Investigation Approach
 
-## Identity Information
+The investigation follows the security analysis framework:
 
-- Username
-- User department
+## Who?
+
+Questions:
+
+- Who owns the account?
+- Is the user expected to access this resource?
+- Does the user have privileged permissions?
+- Has the account recently changed?
+
+Evidence:
+
+- User account details
 - Assigned roles
-- Privileged access
-- MFA status
+- Group memberships
+- Privileges
 
 ---
 
-## Sign-in Details
+## What?
+
+Questions:
+
+- What application was accessed?
+- What resources were accessed?
+- Were any changes performed?
+
+Evidence:
+
+- Application access logs
+- Audit logs
+- File activity
+- Administrative actions
+
+---
+
+## When?
+
+Questions:
+
+- When did the activity begin?
+- Was the activity within normal working hours?
+- Did successful access occur after failed attempts?
+
+Evidence:
+
+- Sign-in timestamps
+- Activity timeline
+- Authentication history
+
+---
+
+## Where?
+
+Questions:
+
+- Where did authentication originate?
+- Is the location expected?
+- Has this IP address been observed previously?
+
+Evidence:
+
+- IP address
+- Geographic location
+- Network information
+
+---
+
+## How?
+
+Questions:
+
+- Was MFA completed?
+- What authentication method was used?
+- Was the device trusted?
+- Were Conditional Access policies applied?
+
+Evidence:
+
+- Authentication method
+- Device information
+- Conditional Access results
+
+---
+
+## Why?
+
+Questions:
+
+- Why was this activity considered suspicious?
+- Was an existing security control missing?
+- Could the attacker have bypassed controls?
+
+Evidence:
+
+- Risk detections
+- Security policies
+- Previous activity patterns
+
+---
+
+# Evidence Collection Checklist
 
 Collect:
 
-- Timestamp
-- IP Address
-- Country
-- City
-- Device Name
-- Browser
-- Operating System
-- Sign-in Result
-- Authentication Method
-
----
-
-## Questions to Answer
-
-### Who?
-
-Who owns the account?
-
-Who approved the login?
-
----
-
-### What?
-
-What applications were accessed?
-
-What actions were performed after sign-in?
-
----
-
-### When?
-
-When did the first failed login occur?
-
-When did the successful login occur?
-
-Were there any sign-ins afterwards?
-
----
-
-### Where?
-
-Which country?
-
-Which IP address?
-
-Has this IP been seen before?
-
----
-
-### How?
-
-Was MFA used?
-
-Was Conditional Access applied?
-
-Was the device compliant?
-
----
-
-### Why?
-
-Why was the login considered suspicious?
-
-Was the user expected to be in this location?
+- User identity information
+- Sign-in logs
+- Authentication methods
+- Device information
+- IP address information
+- Location details
+- Application activity
+- Privilege changes
+- Security alerts
 
 ---
 
 # Possible Indicators of Compromise
 
-- Multiple failed logins
+Indicators include:
+
+- Multiple failed authentication attempts
 - Successful login after failures
 - New geographic location
-- Unusual sign-in time
-- New device
-- Impossible travel
-- High-risk sign-in
+- Impossible travel activity
+- Unknown device
+- Unusual application access
+- Suspicious privilege changes
 
 ---
 
-# Possible Response Actions
+# Investigation Outcome
 
-If compromise is confirmed:
+## Current Status
 
-- Block sign-in
-- Reset password
-- Revoke active sessions
-- Require MFA re-registration
-- Review mailbox rules
-- Review file access
-- Notify the user
-- Continue monitoring
+No confirmed compromise.
+
+This investigation represents a simulated identity security investigation used to understand the workflow followed by security analysts.
+
+---
+
+# Recommended Response Actions
+
+If compromise was confirmed:
+
+1. Block suspicious authentication activity
+2. Reset user credentials
+3. Revoke active sessions
+4. Require MFA re-registration
+5. Review mailbox activity
+6. Review file access activity
+7. Check for privilege escalation
+8. Continue monitoring
 
 ---
 
 # Lessons Learned
 
+<<<<<<< HEAD
 Identity investigations should begin by validating whether the activity is expected or suspicious. Evidence from sign-in logs, MFA status, device information, and user context helps determine whether an account has been compromised.
+=======
+Identity investigations require understanding:
+
+- User behaviour
+- Authentication patterns
+- Access history
+- Security controls
+- Attack techniques
+
+A security analyst must combine technical evidence with business context before making a decision.
+
+---
+
+# Future Improvements
+
+Next investigation improvements:
+
+- Analyse real Entra ID sign-in logs
+- Create identity detection rules
+- Write KQL queries
+- Connect identity telemetry to Microsoft Sentinel
+- Perform full incident response exercises
+>>>>>>> 92edb29 (Update Identity Security file and README)
