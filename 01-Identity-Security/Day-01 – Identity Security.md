@@ -215,9 +215,9 @@ If compromise was confirmed:
 
 # Lessons Learned
 
-<<<<<<< HEAD
+
 Identity investigations should begin by validating whether the activity is expected or suspicious. Evidence from sign-in logs, MFA status, device information, and user context helps determine whether an account has been compromised.
-=======
+
 Identity investigations require understanding:
 
 - User behaviour
