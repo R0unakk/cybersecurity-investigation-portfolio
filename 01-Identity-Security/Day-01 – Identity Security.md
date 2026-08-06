@@ -239,4 +239,4 @@ Next investigation improvements:
 - Write KQL queries
 - Connect identity telemetry to Microsoft Sentinel
 - Perform full incident response exercises
->>>>>>> 92edb29 (Update Identity Security file and README)
+
