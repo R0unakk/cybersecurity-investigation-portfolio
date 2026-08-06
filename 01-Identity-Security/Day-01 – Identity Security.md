@@ -8,9 +8,9 @@ An alert was generated for suspicious sign-in activity involving a user account.
 
 - User: John Smith
 - Time: 02:13 AM
-- Location: Russia
+- Location: Australia
 - Failed Sign-ins: 12
-- Successful Sign-in: Yes
+- Successful Sign-in: No
 - Investigation Status: Initial Review
 
 ---
