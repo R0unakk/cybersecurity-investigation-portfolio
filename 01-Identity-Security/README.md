@@ -144,39 +144,157 @@ A simulated SOC investigation into a potentially compromised Finance user's Micr
 
 
 
-The identity investigations in this section follow an evidence-based incident response process:
+The identity investigations in this section follow an evidence-based incident response process.
 
 
 
-```text
+\### Investigation Process
 
-Detect
 
-&#x20; ↓
 
-Validate
+1\. \*\*Detect\*\* — Identify a potentially suspicious identity or security event.
 
-&#x20; ↓
+2\. \*\*Validate\*\* — Determine whether the activity is legitimate or suspicious.
 
-Investigate
+3\. \*\*Investigate\*\* — Analyse authentication, user, device, location, and activity data.
 
-&#x20; ↓
+4\. \*\*Scope\*\* — Determine the extent of the incident and identify affected accounts or systems.
 
-Scope
+5\. \*\*Contain\*\* — Take actions to limit further unauthorised activity.
 
-&#x20; ↓
+6\. \*\*Remediate\*\* — Remove the underlying cause and restore secure access.
 
-Contain
+7\. \*\*Recover\*\* — Confirm that the environment has returned to a secure state.
 
-&#x20; ↓
+8\. \*\*Learn\*\* — Document findings and identify opportunities for security improvement.
 
-Remediate
 
-&#x20; ↓
 
-Recover
+\---
 
-&#x20; ↓
 
-Learn
+
+\## Skills Developed
+
+
+
+The projects in this section are developing practical skills in:
+
+
+
+\- Identity security fundamentals
+
+\- Microsoft Entra ID investigation
+
+\- Authentication analysis
+
+\- Device and location analysis
+
+\- Indicator of compromise (IOC) identification
+
+\- Evidence classification
+
+\- Incident timeline construction
+
+\- Business impact assessment
+
+\- Containment planning
+
+\- Remediation planning
+
+\- Security documentation
+
+
+
+\---
+
+
+
+\## Planned Technical Work
+
+
+
+Future work will build on these fundamentals with hands-on technical exercises.
+
+
+
+Planned topics include:
+
+
+
+\- Conditional Access
+
+\- Entra sign-in logs
+
+\- KQL fundamentals
+
+\- Suspicious sign-in detection
+
+\- Risk-based identity controls
+
+\- Mailbox activity investigation
+
+\- Identity threat hunting
+
+\- Detection engineering
+
+
+
+Technical evidence will be added as the practical labs are completed.
+
+
+
+\---
+
+
+
+\## Portfolio Objective
+
+
+
+The goal of this section is to demonstrate the ability to move from an initial \*\*security problem\*\* through a structured investigation and ultimately toward measurable security improvement.
+
+
+
+\### Security Investigation Lifecycle
+
+
+
+1\. \*\*Security Problem\*\*
+
+2\. \*\*Investigation\*\*
+
+3\. \*\*Evidence\*\*
+
+4\. \*\*Finding\*\*
+
+5\. \*\*Risk Assessment\*\*
+
+6\. \*\*Containment\*\*
+
+7\. \*\*Remediation\*\*
+
+8\. \*\*Security Improvement\*\*
+
+
+
+The portfolio is designed to demonstrate not only technical knowledge, but also the ability to:
+
+
+
+\- Analyse evidence
+
+\- Document findings
+
+\- Assess security risk
+
+\- Identify indicators of compromise
+
+\- Make security decisions
+
+\- Plan containment and remediation
+
+\- Communicate investigations clearly
+
+\- Recommend security improvements
 
