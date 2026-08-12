@@ -1,50 +1,38 @@
-\# Day 1 – Identity Security Fundamentals
+\# Identity Security
 
 
 
-\## Project Overview
+\## Overview
 
 
 
-This project introduces the fundamentals of enterprise identity security and the role identity plays in modern cybersecurity.
+This section focuses on \*\*identity security using Microsoft Entra ID and Microsoft 365 identity controls\*\*.
 
 
 
-Modern organisations rely heavily on cloud identity platforms such as Microsoft Entra ID to manage users, devices, applications, authentication, and access control.
+The objective is to develop practical skills in:
 
 
 
-The objective of this project is to understand how identity-based attacks occur and how security teams investigate suspicious authentication activity.
+\- Identity and access management
+
+\- Authentication and authorization
+
+\- Microsoft Entra ID security
+
+\- Account compromise investigation
+
+\- Conditional Access
+
+\- Identity threat detection
+
+\- Incident response
+
+\- Security improvement
 
 
 
-\---
-
-
-
-\# Business Scenario
-
-
-
-An organisation uses Microsoft Entra ID to manage employee identities and access to cloud resources.
-
-
-
-Because user accounts provide access to business applications and data, compromised identities represent a significant security risk.
-
-
-
-The security team needs to understand:
-
-
-
-\- How users authenticate
-
-\- How access is controlled
-
-\- How suspicious sign-ins are detected
-
-\- How identity incidents are investigated
+The focus is not only on learning Microsoft technologies, but on understanding how identity-related security problems are \*\*identified, investigated, contained, remediated, and prevented\*\*.
 
 
 
@@ -52,213 +40,45 @@ The security team needs to understand:
 
 
 
-\# Security Problem
+\## Projects
 
 
 
-Identity-based attacks are one of the most common methods attackers use to gain initial access to organisations.
+\### 01 — Identity Security Fundamentals
 
 
 
-Examples include:
+Introduces the core concepts required to understand enterprise identity security.
 
 
 
-\- Phishing attacks
+\*\*Topics covered:\*\*
 
-\- Password spraying
 
-\- Credential theft
 
-\- MFA fatigue attacks
+\- Microsoft Entra ID
 
-\- Token theft
-
-
-
-A compromised account can allow attackers to access business systems without immediately triggering traditional malware detection.
-
-
-
-\---
-
-
-
-\# Security Risk
-
-
-
-A compromised identity could lead to:
-
-
-
-\- Unauthorised access to company resources
-
-\- Data theft
-
-\- Business email compromise
-
-\- Privilege escalation
-
-\- Lateral movement
-
-\- Financial fraud
-
-
-
-Identity security controls are therefore a critical part of enterprise security.
-
-
-
-\---
-
-
-
-\# Objectives
-
-
-
-The objectives of this project were to understand:
-
-
-
-\- Authentication vs Authorization
-
-\- Microsoft Entra ID fundamentals
-
-\- Identity components
-
-\- Common identity attack techniques
-
-\- Sign-in log information used during investigations
-
-\- The security investigation process for suspicious account activity
-
-
-
-\---
-
-
-
-\# Investigation / Research
-
-
-
-The following areas were explored:
-
-
-
-\## Authentication
-
-
-
-Understanding how organisations verify user identity through:
-
-
-
-\- Password authentication
-
-\- Multi-factor authentication (MFA)
-
-\- Passwordless authentication methods
-
-
-
-\---
-
-
-
-\## Authorization
-
-
-
-Understanding how organisations control access after identity verification.
-
-
-
-\- User permissions
-
-\- Security groups
-
-\- Role-based access control (RBAC)
-
-
-
-\---
-
-
-
-\## Microsoft Entra ID Components
-
-
-
-Explored key identity components:
-
-
+\- Tenants
 
 \- Users
 
 \- Groups
 
-\- Devices
+\- Group membership
 
-\- Applications
+\- Application registrations
 
-\- Roles
+\- Identity and access concepts
 
-\- Authentication methods
-
-
-
-\---
+\- Security implications of identity changes
 
 
 
-\## Identity Attack Techniques
+\*\*Status:\*\* Complete
 
 
 
-Reviewed common identity threats:
-
-
-
-\### Password Spray
-
-
-
-Attackers attempt a small number of commonly used passwords against many accounts.
-
-
-
-\### Brute Force
-
-
-
-Attackers attempt many passwords against a single account.
-
-
-
-\### MFA Fatigue
-
-
-
-Attackers repeatedly send MFA requests hoping a user approves one.
-
-
-
-\### Token Theft
-
-
-
-Attackers obtain authentication tokens to access resources without using a password.
-
-
-
-\### Phishing
-
-
-
-Attackers trick users into providing credentials through fake login pages.
+\[View Project](./01%20%E2%80%94%20Identity%20Security.md)
 
 
 
@@ -266,71 +86,53 @@ Attackers trick users into providing credentials through fake login pages.
 
 
 
-\# Tools Used
+\### 02 — Entra ID Sign-In Investigation
 
 
 
-\- Microsoft Entra ID security concepts
-
-\- Microsoft security documentation
-
-\- GitHub for technical documentation and portfolio development
+A simulated SOC investigation into a potentially compromised Finance user's Microsoft Entra ID account.
 
 
 
-\---
+\*\*The investigation covers:\*\*
 
 
 
-\# Findings
+\- Suspicious authentication
+
+\- Unusual geographic location
+
+\- Unknown device
+
+\- MFA considerations
+
+\- Exchange Online activity
+
+\- Suspicious mailbox forwarding
+
+\- Investigation timeline
+
+\- Indicators of compromise
+
+\- Evidence analysis
+
+\- Findings
+
+\- Business impact
+
+\- Containment
+
+\- Remediation
+
+\- Security improvements
 
 
 
-Identity is a critical security layer because most enterprise resources depend on authenticated users.
+\*\*Status:\*\* Complete — simulated investigation
 
 
 
-Security teams rely on identity telemetry such as:
-
-
-
-\- User activity
-
-\- Sign-in location
-
-\- IP address
-
-\- Authentication method
-
-\- Device information
-
-\- Risk indicators
-
-
-
-to identify potentially compromised accounts.
-
-
-
-\---
-
-
-
-\# Security Improvement
-
-
-
-Improved understanding of:
-
-
-
-\- How identity attacks occur
-
-\- How authentication activity can be investigated
-
-\- What evidence security analysts collect during identity investigations
-
-\- How identity controls reduce security risk
+\[View Investigation](./02%20-%20Entra%20Sign-In%20Investigation.md)
 
 
 
@@ -338,55 +140,45 @@ Improved understanding of:
 
 
 
-\# Business Impact
+\## Investigation Methodology
 
 
 
-A strong identity security foundation helps organisations:
+The identity investigations in this section follow an evidence-based incident response process:
 
 
 
-\- Reduce account compromise risk
+```text
 
-\- Improve threat detection
+Detect
 
-\- Strengthen access control
+&#x20; ↓
 
-\- Respond faster to suspicious activity
+Validate
 
+&#x20; ↓
 
+Investigate
 
-\---
+&#x20; ↓
 
+Scope
 
+&#x20; ↓
 
-\# Lessons Learned
+Contain
 
+&#x20; ↓
 
+Remediate
 
-Identity is one of the most important security domains in modern organisations.
+&#x20; ↓
 
+Recover
 
+&#x20; ↓
 
-Security analysts must understand:
-
-
-
-\- Who accessed a system
-
-\- What actions occurred
-
-\- When activity happened
-
-\- Where access originated
-
-\- How attackers gained access
-
-\- Why security controls failed
-
-
-
-This investigation mindset is essential for incident response and threat hunting.
+Learn
 
 
 
@@ -394,25 +186,117 @@ This investigation mindset is essential for incident response and threat hunting
 
 
 
-\# Future Improvements
+\## Skills Developed
 
 
 
-Future development areas:
+The projects in this section are developing practical skills in:
 
 
 
-\- Create a Microsoft Entra ID lab environment
+\- Identity security fundamentals
 
-\- Configure MFA controls
+\- Microsoft Entra ID investigation
 
-\- Implement Conditional Access policies
+\- Authentication analysis
 
-\- Explore Identity Protection
+\- Device and location analysis
 
-\- Investigate sign-in logs
+\- Indicator of compromise (IOC) identification
 
-\- Connect identity data to Microsoft Sentinel
+\- Evidence classification
 
-\- Create KQL queries for identity threat detection
+\- Incident timeline construction
+
+\- Business impact assessment
+
+\- Containment planning
+
+\- Remediation planning
+
+\- Security documentation
+
+
+
+\---
+
+
+
+\## Planned Technical Work
+
+
+
+Future work will build on these fundamentals with hands-on technical exercises.
+
+
+
+Planned topics include:
+
+
+
+\- Conditional Access
+
+\- Entra sign-in logs
+
+\- KQL fundamentals
+
+\- Suspicious sign-in detection
+
+\- Risk-based identity controls
+
+\- Mailbox activity investigation
+
+\- Identity threat hunting
+
+\- Detection engineering
+
+
+
+Technical evidence will be added as the practical labs are completed.
+
+
+
+\---
+
+
+
+\## Portfolio Objective
+
+
+
+The goal of this section is to demonstrate the ability to move from an initial \*\*security problem\*\* through a structured investigation and ultimately toward measurable security improvement.
+
+
+
+```text
+
+Security Problem
+
+&#x20;      ↓
+
+Investigation
+
+&#x20;      ↓
+
+Evidence
+
+&#x20;      ↓
+
+Finding
+
+&#x20;      ↓
+
+Risk Assessment
+
+&#x20;      ↓
+
+Containment
+
+&#x20;      ↓
+
+Remediation
+
+&#x20;      ↓
+
+Security Improvement
 
